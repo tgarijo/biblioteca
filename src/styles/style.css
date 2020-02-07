@@ -1,0 +1,64 @@
+body {
+  width: 800px;  
+  margin: auto;
+}
+
+.logo {
+  background-color: lightcoral;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ED1556;
+  
+}
+
+li {
+  width: 200px;
+  display: inline;
+}
+
+li a {  
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: deeppink
+}
+
+#header {
+  margin-bottom: 50px;
+}
+
+.form {
+  width: 500px;  
+  clear: both;
+  margin: auto;
+}
+
+fieldset div {
+  margin-top: 20px;
+}
+
+fieldset label {
+  margin-top: 10px;
+}
+.form input {
+  width: 90%;
+  clear: both;
+  padding-left: 2px;
+}
+
+.form button { 
+ clear: both;
+ color: #ED1556;
+ margin: 20px; 
+ margin-right: 30px;
+ float: right;
+}

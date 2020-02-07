@@ -1,0 +1,5 @@
+{
+  "server": {  "baseDir": "./"},
+  "browser": ["firefox"],
+  "port" : 3500
+}
