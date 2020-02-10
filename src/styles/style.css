@@ -7,7 +7,27 @@ body {
   background-color: lightcoral;
 }
 
+nav {
+  background: deeppink;
+  display: inline flex;
+  position: relative;
+  top: -15px; left: 10px;
+ 
+  height: 20px;
+}
+ 
 
+nav a {
+  color: white;
+  padding-left: 1.4em;
+}
+nav a:hover {
+  background-color: deeppink
+}
+
+#details span {
+  color: red;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -22,6 +42,7 @@ li {
 }
 
 li a {  
+  
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -33,11 +54,16 @@ li a:hover {
 }
 
 #header {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
+.errors {
+  color: #ED1556;
+  padding-bottom: 1.0em;
+  font-weight: bolder;
+}
 .form {
-  width: 500px;  
+  width: 800px;  
   clear: both;
   margin: auto;
 }
@@ -46,19 +72,26 @@ fieldset div {
   margin-top: 20px;
 }
 
+fieldset h2 {
+  margin-top: 5px;
+  text-align: center;
+}
+
 fieldset label {
   margin-top: 10px;
 }
 .form input {
-  width: 90%;
+  width: 100%;
   clear: both;
   padding-left: 2px;
 }
 
 .form button { 
+  width: 100%;
  clear: both;
  color: #ED1556;
- margin: 20px; 
- margin-right: 30px;
- float: right;
+ margin-top: 15px;
+/* margin: 20px; */
+/* margin-right: 30px;
+ float: right;*/
 }
