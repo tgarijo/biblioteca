@@ -1,173 +1,168 @@
+
+
 body {
   width: 800px;  
   margin: auto;
-  background-color: #EBEBEB;
+  /*background-color: #EBEBEB;*/
+  background-color: lightgray;
   color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.logo {
-  background-color: lightcoral;
-}
-
-nav {
-  background: deeppink;
-  /*display: inline flex;
-  position: relative;*/
-  top: -15px; left: 10px;
- 
-  height: 20px;
-}
-
-
-nav a {
-  color: white;
-  padding-left: 1.4em;
-}
-nav a:hover {
-  background-color: deeppink
-}
-
-nav #size {
-  /*background-color: #4CAF50;*/
-  border: 1px;
-  color: white;
- /*padding: 15px 25px;*/
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  width:30px;
-  margin-top: 1.5em;
-
-}
-nav #ink {
-  /*background-color: #4CAF50;*/
-  border: 1px;
-  color: white;
- /*padding: 15px 25px;*/
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  width:30px;
-  margin-top: 1.5em;
-}
-
-/*
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #ED1556;
+/* Telefonos moviles */ @media only screen and (max-width: 400px) {}
+/* Tabletas */ @media only screen and (min-width: 401px) {}
+/* Ordenadore */ @media only screen and (min-width: 961px) {
+  .logo {
+    background-color: lightcoral;
+  }
   
-}
-
-li {
-  width: 200px;
-  display: inline;
-}
-
-li a {  
+  nav {
+    background: #E4004F;
+    display: inline flex;
+    position: relative;
+    top: -15px; left: 10px;
+    width: 85%;
+    margin-top: 1.5em;
+  }
   
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+  
+  nav a {
+    color: white;
+    padding-left: 1.4em;
+    
+  }
+  nav a:hover {
+    background-color: #E4004F;
+    color:mediumblue;
+  }
+  
+  nav:nth-child(3) {
+    background-color:lightgray;
+    top: -85px;
+    left: 92%;
+   
+  }
+  nav input{
+    background-color:lightgray;
+  }
+  
+  nav #size {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width:30px;
+    margin-top: 1.5em;  
+  }
 
-li a:hover {
-  background-color: deeppink
-}
-*/
-#header {
-  margin-bottom: 20px;
-}
+  nav #ink {
+    /*background-color: #4CAF50;*/
+    border: 1px;
+    color: white;
+   /*padding: 15px 25px;*/
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width:30px;
+    margin-top: 1.5em;
+  }
+  
+  
+  #header {
+    margin-bottom: 20px;
+  }
+  
+  .errors {
+    color: #ED1556;
+    padding-bottom: 1.0em;
+    font-weight: bolder;
+  }
+  .form {
+    width: 800px;  
+    clear: both;
+    margin-top: -100px;
+    padding-top: 1em;;
+  }
+  
+  fieldset div {
+    margin-top: 20px;
+  }
+  
+  fieldset h2 {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  fieldset label {
+    margin-top: 10px;
+  }
+  .form input {
+    width: 98%;
+    clear: both;
+    padding-left: 2px;
+  }
+  
+  .form button { 
+    width: 100%;
+   clear: both;
+   color: #ED1556;
+   margin-top: 15px;
+  /* margin: 20px; */
+  /* margin-right: 30px;
+   float: right;*/
+  }
+  
+  
+  div.greyGridTable {
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 1.5em;
+  }
+  .divTable.greyGridTable .divTableCell, .divTable.greyGridTable .divTableHead {
+    border: 1px solid #FFFFFF;
+    padding: 3px 4px;
+  }
+  .divTable.greyGridTable .divTableBody .divTableCell {
+    font-size: 13px;
+  }
+  /*
+  .divTable.greyGridTable .divTableCell:nth-child(even) {
+    background: #EBEBEB;
+  }*/
+  
+  .divTable.greyGridTable .divTableHeading {
+    background: #FFFFFF;
+    border-bottom: 4px solid #333333;
+  }
+  .divTable.greyGridTable .divTableHeading .divTableHead {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-left: 2px solid #333333;
+  }
+  .divTable.greyGridTable .divTableHeading .divTableHead:first-child {
+    border-left: none;
+  }
+  
+  .greyGridTable .tableFootStyle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    border-top: 4px solid #333333;
+  }
+  .greyGridTable .tableFootStyle {
+    font-size: 14px;
+  }
+  /* DivTable.com */
+  .divTable{ display: table; }
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}
 
-.errors {
-  color: #ED1556;
-  padding-bottom: 1.0em;
-  font-weight: bolder;
 }
-.form {
-  width: 800px;  
-  clear: both;
-  margin: auto;
-  padding-top: 1em;;
-}
-
-fieldset div {
-  margin-top: 20px;
-}
-
-fieldset h2 {
-  margin-top: 5px;
-  text-align: center;
-}
-
-fieldset label {
-  margin-top: 10px;
-}
-.form input {
-  width: 100%;
-  clear: both;
-  padding-left: 2px;
-}
-
-.form button { 
-  width: 100%;
- clear: both;
- color: #ED1556;
- margin-top: 15px;
-/* margin: 20px; */
-/* margin-right: 30px;
- float: right;*/
-}
-
-
-div.greyGridTable {
-  border: 2px solid #FFFFFF;
-  width: 100%;
-  text-align: center;
-  border-collapse: collapse;
-  margin-top: 1.5em;
-}
-.divTable.greyGridTable .divTableCell, .divTable.greyGridTable .divTableHead {
-  border: 1px solid #FFFFFF;
-  padding: 3px 4px;
-}
-.divTable.greyGridTable .divTableBody .divTableCell {
-  font-size: 13px;
-}
-.divTable.greyGridTable .divTableCell:nth-child(even) {
-  background: #EBEBEB;
-}
-.divTable.greyGridTable .divTableHeading {
-  background: #FFFFFF;
-  border-bottom: 4px solid #333333;
-}
-.divTable.greyGridTable .divTableHeading .divTableHead {
-  font-size: 15px;
-  font-weight: bold;
-  color: #333333;
-  text-align: center;
-  border-left: 2px solid #333333;
-}
-.divTable.greyGridTable .divTableHeading .divTableHead:first-child {
-  border-left: none;
-}
-
-.greyGridTable .tableFootStyle {
-  font-size: 14px;
-  font-weight: bold;
-  color: #333333;
-  border-top: 4px solid #333333;
-}
-.greyGridTable .tableFootStyle {
-  font-size: 14px;
-}
-/* DivTable.com */
-.divTable{ display: table; }
-.divTableRow { display: table-row; }
-.divTableHeading { display: table-header-group;}
-.divTableCell, .divTableHead { display: table-cell;}
-.divTableHeading { display: table-header-group;}
-.divTableFoot { display: table-footer-group;}
-.divTableBody { display: table-row-group;}

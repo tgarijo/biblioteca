@@ -5,12 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <title>Gestion de Libros</title>
+  <link rel="stylesheet" href="../styles/style.css">  
+  <title>Document</title>
 </head>
 <body>
   <div id="header"></div>
 
-  <h1>Pagina Soporte Aplicación</h1>
+  <div class="form">
+    <div class="errors"></div>
+    <form action="#" class="formBook">
+      <fieldset>
+        <h2>Datos del Libro</h2>
+        <div>
+          <label name="name">Nombre:</label>
+          <input type="text" id="name" name="name">
+          <label name="subject">Asunto:</label>
+          <input type="text" id="subject" name="subject">
+          <br>
+          <label name="comentarios">Problema</label>
+          <textarea name="comentarios" rows="10" cols="80">Escribe aquí tus comentarios</textarea>
+          <button type="submit" form="formBook" value="Submit">Enviar</button>
+        </div>        
+      </fieldset>
+      
+    </form>
+  </div>
+
   <script src="../scripts/nav.js"></script>
 </body>
 </html>

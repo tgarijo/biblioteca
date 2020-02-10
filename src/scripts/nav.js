@@ -23,8 +23,8 @@ var main = function() {
       }
     
       // checking if all data set on inputs forms
-      // Object.keys(data).forEach(function(key) 
-      //   {checkField(data[key]);});
+      Object.keys(data).forEach(function(key) 
+        {checkField(data[key]);});
       
       if (!error) composeLines(data)
       
@@ -49,13 +49,14 @@ var composeLines = function(data) {
 
   $(detail).append(tbody);
   $(tbody).append(trow);
-
+  
   // fill all detail
   Object.keys(data).forEach(function(key) 
     {
     //  console.log(data[key][0].value);
       var row = $(`<div class="divTableCell">${data[key][0].value}</div>`);   
       $(trow).append(row);
+      
     });
 
   
