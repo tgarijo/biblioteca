@@ -27,15 +27,25 @@ En principio según la complejidad estará íntegramente diseñada en html y css
 El diseño estará basado en la información que da la asignatura de “Aplicaciones y Servicios Web” y fuentes externas. Se diseñará basado en el standard HTML 5.
 
 ##Diseño CSS
-El diseño de hojas de estilo estará basado en CSS BootStrap. Este framework es un conjunto de librerías y estilos que nos facilitara el diseño de las pantallas de usuarios o vistas con el objetivo de formalizar un estilo visual en todas las vistas y la interacción con el usuario
+El diseño de hojas de estilo estará basado en CSS. Este framework es un conjunto de librerías y estilos que nos facilitara el diseño de las pantallas de usuarios o vistas con el objetivo de formalizar un estilo visual en todas las vistas y la interacción con el usuario
 
 ##Estructura.
 Todo el proyecto partirá de la carpeta src.
 Dentro de ella habrá una carpeta view y otra javascript
 
 
+##Unidad 3 
 
+Infraestructura 
+Para la ejecución del código se ha utilizado un paquete llamado lite-server que ha sido instalado con el comando npm install lite-server del software nodejs o hacer un npm install desde el directorio src del proyecto
 
-Fuentes
-https://getbootstrap.com/
+Para arrancar el servidor de ejecución ejecutaremos npm start
+Para llamar a la aplicación llamaremos a la url  http://localhost:3500/views/books.html
+
+Se ha dotado al formulario de libros la posibilidad de poder añadir libros y que tenga un listado de los libros que se han ido añadiendo.
+
+Se ha implementado un control de errores para que cada uno de los campos de entrada suponiendo que son todos obligatorios.
+
+Se ha implementado el aumento de fuente
+Se ha implementado el cambio de color.
 
