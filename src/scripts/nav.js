@@ -3,7 +3,10 @@ var error=false;
 $(function(){
   $("#header").load("./headerPartial.html"); 
   //$(".formBook input").value="";
+  
 });
+
+
 
 var main = function() {
    
@@ -39,14 +42,26 @@ var main = function() {
 }
 
 var composeLines = function(data) {
-  var linesOfBooks = `<span> ${data['title'][0].value} </span>`
-  linesOfBooks += `<span> ${data['author'][0].value} </span>`
-  linesOfBooks += `<span> ${data['editorial'][0].value} </span>`
-  linesOfBooks += `<span> ${data['isbn'][0].value} </span>`
-  linesOfBooks += `<span> ${data['available'][0].value} </span>`
+  var detail = jQuery(".divTable");
+  var tbody = $("<div>").addClass('divTableBody');
+  var trow = $("<div>").addClass('divTableRow');
 
-  $("#detail").append(linesOfBooks);    
+
+  $(detail).append(tbody);
+  $(tbody).append(trow);
+
+  // fill all detail
+  Object.keys(data).forEach(function(key) 
+    {
+    //  console.log(data[key][0].value);
+      var row = $(`<div class="divTableCell">${data[key][0].value}</div>`);   
+      $(trow).append(row);
+    });
+
+  
 }
+
+
 // function for check if inputs are void
 var checkField = function ($control){
     var $errorMassage = "Debe rellenar campo"
@@ -70,24 +85,3 @@ var errors = function($textError, $control) {
 }
 
 $(document).ready(main);
-
-/*
-var addData = function() {
-
-  "use strict";
-
-  var data= [];
-
-  var form = document.getElementById('formBook');
-  var college = form.elements.titulo.value;
-  var autor = form.elements.autor.value;
-  var editorial = form.elements.editorial.value;
-  var isbn = form.elements.isbn.value;
-  
-  var divDetail = document.getElementById('detail');
-
-  var node = '<span>'+ college + '</span>';
-
-  divDetail.innerHTML += node;
-}
-*/

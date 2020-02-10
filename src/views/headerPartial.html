@@ -8,13 +8,48 @@
           <a href="./listBook.html" title="Listado Libros">Listado Libros</a>| 
           <a href="/soporte.html" title="Soporte">Soporte</a>| 
           <a href="#">Terms of use</a>| 
-          <a href="#">Contact</a>|
-          <a class="link" href="#" title="Salir">Salir</a>
-    
+          <a href="#">Contact</a>|          
+          <a class="link" href="#" title="Salir">Salir</a>          
+    </nav>
+    <nav>    
+      <input id="size" type="image" src="../img/fsize.png" > 
+      <input id="ink" type="image" src="../img/ink.png" > 
     </nav>
     
   </div>
   
     
 </div>
+
+<script type = "text/javascript" language="javascript">
+  $("nav #size").click( function() {
+    var fontSize = parseInt($('body').css("font-size"));
+   
+    console.log(fontSize);
+    fontSize += 4
+    if (fontSize/16>1.5) fontSize = 16;
+    $('body').css('font-size', fontSize);
+    $('.divTableHead').css('font-size', fontSize);
+    $('nav').css('font-size', 16);
+    
+  });
+
+  $("nav #ink").click( function() {
+    
+    var rgb = $('body').css("background-color");
+    color = '#' + rgb.substr(4, rgb.indexOf(')') - 4).split(',').map((color) => parseInt(color).toString(16)).join('')
+    console.log(color)
+    if(color==="#ebebeb") {
+      console.log('¡entro')
+      $('body').css('background-color', 'black');
+      $('body').css('color', '#ebebeb');
+    }else {
+      $('body').css('background-color', '#ebebeb');
+      $('body').css('color', 'black');
+    }
+
+
+  });
+
+</script>
 
